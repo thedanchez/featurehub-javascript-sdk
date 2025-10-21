@@ -7,8 +7,9 @@
   "repository": "github:featurehub-io/featurehub-javascript-sdk",
   "license": "MIT",
   "scripts": {
-    "build": "pnpm run build:packages",
+    "build": "pnpm run build:packages && pnpm run build:examples",
     "build:packages": "pnpm --filter './packages/*' run build",
+    "build:examples": "pnpm --filter './examples/*' run build",
     "build:js": "pnpm --filter './packages/js' run build",
     "build:node": "pnpm --filter './packages/node' run build",
     "build:react": "pnpm --filter './packages/react' run build",
